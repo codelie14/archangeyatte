@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+  --primary: #00aaff;
+  --secondary: #00ffaa;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom styles */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(0,170,255,0.1) 0%, rgba(0,255,170,0.1) 100%);
+}
+
+.project-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,170,255,0.2);
+  border-color: rgba(0,170,255,0.3);
+}
+
+.skill-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+  color: rgba(255,255,255,0.7);
+}
+
+.social-icon:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
